@@ -5,16 +5,16 @@ import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
 
-    private Flight flight;
     private Plane plane;
+    private Flight flight;
     private Passenger passenger;
     private Passenger passenger2;
 
 
     @Before
     public void before(){
-        flight = new Flight(plane, "BA123","CPT", "GLA", "06:00" );
         plane = new Plane(PlaneType.BOEINGSEVENFOURSEVEN);
+        flight = new Flight(plane, "BA123","CPT", "GLA", "06:00" );
         passenger = new Passenger("John Smith", 2);
         passenger2 = new Passenger("Mary Jones", 1);
 
@@ -52,14 +52,13 @@ public class FlightTest {
         assertEquals("06:00", flight.getDepartureTime());
     }
 
-//passengerCount +=1 = capacity -= 1
 
     @Test
     public void canGetRemainingCapacity(){
         flight.addPassenger(passenger);
         flight.addPassenger(passenger2);
-        plane.getPlane().getPlaneCapacity() - flight.getPassengerCount();
-        assertEquals(8, flight.getRemainingCapacity());
+
+        assertEquals(8, this.flight.getRemainingCapacity());
     }
 
 }

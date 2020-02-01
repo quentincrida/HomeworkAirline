@@ -48,7 +48,7 @@ public class Flight {
         return departureTime;
     }
     public int getRemainingCapacity() {
-        return plane.getPlane().getPlaneCapacity() - getPassengerCount();
+        return plane.getPlane().getPlaneCapacity() - this.getPassengerCount();
     }
 
 }
