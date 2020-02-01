@@ -50,5 +50,7 @@ public class Flight {
     public int getRemainingCapacity() {
         return plane.getPlane().getPlaneCapacity() - this.getPassengerCount();
     }
-
+    public boolean canAddPassenger(){
+        return plane.getPlane().getPlaneCapacity() > this.getPassengerCount();
+    }
 }
