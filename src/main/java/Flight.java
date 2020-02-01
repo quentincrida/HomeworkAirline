@@ -20,32 +20,31 @@ public class Flight {
     }
 
 
-
-
-    public int getPassengerCount(){
+    public int getPassengerCount() {
         return this.passengers.size();
     }
-    public void addPassenger(Passenger passenger){
+
+    public void addPassenger(Passenger passenger) {
         this.passengers.add(passenger);
     }
-//
-//    public Plane getPlane() {
-//        return plane;
-//    }
-//
-//    public String getFlightNumber() {
-//        return flightNumber;
-//    }
-//
-//    public String getDestination() {
-//        return destination;
-//    }
-//
-//    public String getDepartureAirport() {
-//        return departureAirport;
-//    }
-//
-//    public String getDepartureTime() {
-//        return departureTime;
-//    }
-}
+
+    public Plane getPlane() {
+        return plane;
+    }
+
+    public String getFlightNumber() {
+        return flightNumber;
+    }
+
+    public String getDestination() {
+        return destination;
+   }
+
+  public String getDepartureAirport() {
+       return departureAirport;
+   }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+    }
