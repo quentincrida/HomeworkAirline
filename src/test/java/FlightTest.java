@@ -12,7 +12,7 @@ public class FlightTest {
 
     @Before
     public void before(){
-        flight = new Flight(PlaneType, "BA123","CPT", "GLA", "06:00" );
+        flight = new Flight(plane, "BA123","CPT", "GLA", "06:00" );
         plane = new Plane(PlaneType.BOEINGSEVENFOURSEVEN);
         passenger = new Passenger("John Smith", 2);
 
