@@ -20,6 +20,7 @@ public class PlaneTest {
     @Test
     public void canGetCapacity(){
         assertEquals(10, plane.getPlane().getPlaneCapacity());
+
     }
     @Test
     public void canGetTotalWeight(){

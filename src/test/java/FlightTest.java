@@ -89,6 +89,7 @@ public class FlightTest {
         flight.addPassenger(passenger8);
         flight.addPassenger(passenger9);
         assertEquals(true, this.flight.canAddPassenger());
+        System.out.println("Yes, we have space for you!");
     }
     @Test
     public void canAddPassengerFalse(){
@@ -105,7 +106,7 @@ public class FlightTest {
         flight.addPassenger(passenger11);
 
         assertEquals(false, this.flight.canAddPassenger());
-
+        System.out.println("Sorry, please wait for the next available flight.");
     }
 
 }
