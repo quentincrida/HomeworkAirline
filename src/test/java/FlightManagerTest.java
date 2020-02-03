@@ -9,14 +9,19 @@ public class FlightManagerTest {
     private FlightManager flightManager;
 
     @Before
-    public void before(){
+    public void before() {
         plane = new Plane(PlaneType.BOEINGSEVENFOURSEVEN);
         flightManager = new FlightManager(PlaneType.BOEINGSEVENFOURSEVEN);
     }
 
     @Test
-    public void canGetReservedWeight(){
+    public void canGetReservedWeight() {
         assertEquals(500, flightManager.getReservedWeight());
     }
+    @Test
+    public void canGetBaggageWeightPerPerson() {
+        assertEquals(50, flightManager.getBaggageWeightPerPerson());
+    }
+}
 
 
