@@ -15,8 +15,8 @@ public class FlightManagerTest {
     }
 
     @Test
-    public void canGetBaggageWeightPerPerson(){
-        //assertEquals(50, plane.getPlane().getBaggageWeightPerPerson();
-        assertEquals(50, flightManager.getBaggageWeightPerPerson());
+    public void canGetReservedWeight(){
+        assertEquals(500, flightManager.getReservedWeight());
     }
-}
+
+
